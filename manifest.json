@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Quick Note",
+  "version": "1.0.0",
+  "description": "A minimalist Chrome Extension for quick note-taking while browsing",
+  "permissions": [
+    "storage"
+  ],
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": "assets/writing.png"
+  },
+  "icons": {
+    "128": "assets/writing.png"
+  }
+} 
