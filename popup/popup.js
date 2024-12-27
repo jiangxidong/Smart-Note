@@ -96,16 +96,16 @@ function renderNotes() {
             </div>
             <div class="note-timestamp">${formatDate(note.createdAt)}</div>
             <div class="note-actions">
-                <button class="action-btn complete-btn" data-id="${note.id}" title="${note.completed ? 'Mark as incomplete' : 'Mark as complete'}">
+                <button class="action-btn complete-btn" data-id="${note.id}">
                     ${note.completed ? 'S' : 'S̶'}
                 </button>
-                <button class="action-btn copy-btn" data-id="${note.id}" title="Copy note">
+                <button class="action-btn copy-btn" data-id="${note.id}">
                     📋
                 </button>
-                <button class="action-btn edit-btn" data-id="${note.id}" title="Edit note">
+                <button class="action-btn edit-btn" data-id="${note.id}">
                     ✏️
                 </button>
-                <button class="action-btn delete-btn" data-id="${note.id}" title="Delete note">
+                <button class="action-btn delete-btn" data-id="${note.id}">
                     🗑️
                 </button>
             </div>
