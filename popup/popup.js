@@ -35,6 +35,10 @@ function setupEventListeners() {
 
     // Keyboard shortcuts
     document.addEventListener('keydown', handleKeyboardShortcuts);
+
+    // Clear all button
+    const clearAllButton = document.getElementById('clearAllButton');
+    clearAllButton.addEventListener('click', clearAllNotes);
 }
 
 // Tab Switching
@@ -272,4 +276,16 @@ function handleKeyboardShortcuts(e) {
             deleteNote(parseInt(focusedNote.dataset.id));
         }
     }
+}
+
+async function clearAllNotes() {
+    if (notes.length === 0) {
+        showToast('No notes to clear');
+        return;
+    }
+    
+    notes = [];
+    await chrome.storage.local.set({ notes });
+    renderNotes();
+    showToast('All notes cleared');
 } 
