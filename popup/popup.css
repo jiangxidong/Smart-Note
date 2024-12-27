@@ -122,13 +122,39 @@ textarea {
 
 .action-btn:hover {
     color: var(--primary-color);
-    background-color: rgba(0, 122, 255, 0.1);
 }
 
 .complete-btn {
     font-size: 15px;
     font-weight: bold;
     font-family: monospace;
+}
+
+.copy-btn {
+    font-size: 14px;
+}
+
+/* Add subtle tooltips */
+.action-btn::after {
+    content: attr(title);
+    position: absolute;
+    bottom: -24px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 4px 8px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    font-size: 12px;
+    border-radius: 4px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.2s ease;
+}
+
+.action-btn:hover::after {
+    opacity: 1;
+    visibility: visible;
 }
 
 /* Toast */
@@ -161,4 +187,70 @@ textarea {
 /* Utility Classes */
 .hidden {
     display: none;
+}
+
+/* Button styles */
+.tab-btn, #saveButton {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    background: #f5f5f7;
+    color: #1d1d1f;
+}
+
+/* Tab buttons specific styles */
+.tab-btn {
+    flex: 1;
+    margin: 0 4px;
+}
+
+.tab-btn:first-child {
+    margin-left: 0;
+}
+
+.tab-btn:last-child {
+    margin-right: 0;
+}
+
+/* Active tab state */
+.tab-btn.active {
+    background: #0071e3;
+    color: white;
+}
+
+/* Save button specific styles */
+#saveButton {
+    background: #0071e3;
+    color: white;
+    min-width: 80px;
+}
+
+/* Hover states */
+.tab-btn:hover:not(.active) {
+    background: #e8e8ed;
+}
+
+#saveButton:hover {
+    background: #0077ED;
+}
+
+/* Focus states */
+.tab-btn:focus, #saveButton:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(0, 113, 227, 0.3);
+}
+
+/* Pressed state */
+.tab-btn:active, #saveButton:active {
+    transform: scale(0.98);
+}
+
+/* Disabled state */
+.tab-btn:disabled, #saveButton:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
 } 

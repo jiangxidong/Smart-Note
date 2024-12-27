@@ -97,10 +97,10 @@ function renderNotes() {
             <div class="note-timestamp">${formatDate(note.createdAt)}</div>
             <div class="note-actions">
                 <button class="action-btn complete-btn" data-id="${note.id}" title="${note.completed ? 'Mark as incomplete' : 'Mark as complete'}">
-                    ${note.completed ? 'S̶' : 'S'}
+                    ${note.completed ? 'S' : 'S̶'}
                 </button>
                 <button class="action-btn copy-btn" data-id="${note.id}" title="Copy note">
-                    📑
+                    📋
                 </button>
                 <button class="action-btn edit-btn" data-id="${note.id}" title="Edit note">
                     ✏️
