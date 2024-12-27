@@ -1,6 +1,7 @@
 {
   "manifest_version": 3,
-  "name": "Quick Note",
+  "name": "Smart Note",
+  "short_name": "Smart Note",
   "version": "1.0.0",
   "description": "A minimalist Chrome Extension for quick note-taking while browsing",
   "permissions": [

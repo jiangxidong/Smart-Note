@@ -1,9 +1,9 @@
-# Quick Note - Chrome Extension
+# Smart Note - Chrome Extension
 
-A minimalist Chrome Extension for quick note-taking while browsing. Save, manage, and organize your thoughts with ease.
+A minimalist Chrome Extension for smart note-taking while browsing. Save, manage, and organize your thoughts with ease.
 
 ## Overview
-Quick Note is a lightweight Chrome Extension that allows users to quickly jot down notes while browsing the web. With features like auto-save, historical note viewing, and easy editing, it's designed to be both powerful and user-friendly.
+Smart Note is a lightweight Chrome Extension that allows users to quickly jot down notes while browsing the web. With features like auto-save, historical note viewing, and easy editing, it's designed to be both powerful and user-friendly.
 
 ## Features
 - 📝 Auto-saving notes with visual confirmation
