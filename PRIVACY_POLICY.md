@@ -27,4 +27,4 @@ By using the Smart Note Chrome Extension, you signify your consent and agreement
 
 ## Contact
 
-If you have questions or concerns about this Privacy Policy, you can contact me by email
+If you have questions or concerns about this Privacy Policy, you can contact me by [email](jason.jiang29@gmail.com)
